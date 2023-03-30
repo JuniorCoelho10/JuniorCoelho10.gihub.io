@@ -1,0 +1,185 @@
+.formacao .subtitulo {
+  color:#000000;
+  max-width: 5ch;
+}
+.formacao {
+  background:#141414 ;
+
+} 
+
+.formacao-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding:100px 20px;
+  gap:80px;
+  max-width: 1200px;
+  margin-inline: auto;
+  
+
+}
+
+.formacao-texto {
+  font-size:1.5rem;
+  line-height: 1.1;
+  color:#a3a3a3;
+  margin-bottom:60px;
+  max-width: 40ch;
+}
+
+.formacao-texto strong {
+  color:#ffff;
+}
+
+.formacao-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap:30px;
+  margin-bottom: 60px;
+}
+
+.formacao-card {
+  background: #090909;
+  padding:20px;
+  border-radius: 5px;
+  flex: 1;
+  /* width:205px; */
+  /* height:170px; */
+  position: relative;
+}
+
+.formacao-card span {
+  font-size:.875rem;
+  color:#a3a3a3;
+}
+
+.formacao-card h3 {
+  font-size:1.125rem ;
+  color: #ffff;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom:60px;
+  
+}
+
+.formacao-card::before {
+  content:'';
+  display: block;
+  width: 4px;
+  height: 20px;
+  background:linear-gradient(180deg, #B6F829 0%, #67DD0A 100%);
+  position: absolute;
+  top: 60px;
+  left:-4px;
+}
+
+.cursos {
+  margin-bottom:60px;
+
+
+}
+
+.formacao-extra h3 {
+  font-size:0.875rem;
+  line-height: 1.4;
+  color:#8f8f8f;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.cursos ul li {
+ 
+  font-size:1.125rem;
+  line-height: 1.4;
+  margin-bottom:20px;
+  color:#fff;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.cursos ul li span {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  color:#8f8f8f;
+  
+
+}
+
+.idiomas{
+  position: relative;
+}
+
+.idiomas ul li {
+  font-size:1.125rem;
+  line-height: 1.4;
+  margin-bottom:20px ;
+  color:#fff;
+
+
+}
+
+.idiomas ul li span {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  color:#8f8f8f;
+}
+
+/* aplicação dos icones */
+
+.cursos h3::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+    background: url(../img/cursos.svg) no-repeat center center ;
+  position: absolute;
+  left:-36px;
+  top:-4px;
+
+}
+
+
+.idiomas h3::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+   background: url(../img/idiomas.svg) no-repeat center center ;
+  position: absolute;
+  left:-36px;
+  top:-4px;
+}
+
+/* ******FIM****** */
+
+/* ------------RESPONSIVO------------ */
+
+@media (max-width: 800px) {
+  .formacao-container {
+    grid-template-columns: 1fr;
+    padding:60px 20px;
+    gap:40px;
+  }
+
+  .formacao .subtitulo {
+    color:#fff;
+  }
+
+  .formacao-texto {
+    font-size:1.25rem;
+  }
+
+  .cursos h3::before {
+    position: initial;
+    margin-bottom: 10px;
+  }
+
+  .idiomas h3::before {
+    position: initial;
+    margin-bottom: 10px;
+  }
+}
+
+
+/* ------------FIM RESPONSIVO------------ */

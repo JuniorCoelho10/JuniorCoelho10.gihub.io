@@ -1,0 +1,123 @@
+.experiencia {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap:80px;
+
+
+}
+
+.experiencia .subtitulo {
+  color:#e0e0e0;
+}
+
+.experiencia-texto {
+  font-size:1,5rem;
+  line-height: 1.33;
+  max-width: 40ch;
+  margin-bottom: 60px;
+  color:#525252;
+}
+
+.experiencia-texto strong {
+  color:#141414;
+  
+}
+
+.empresa {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:10px 20px;
+  margin-bottom: 20px;
+  background: #F5F5F5 ;
+  padding:20px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.empresa-ano {
+  position: absolute;
+  /* display: none; */
+  top:20px;
+  left:-80px;
+  color:#525252;
+  font-size:.875rem ;
+  width:50px;
+  text-align: right;
+}
+
+.empresa::before {
+  content:'';
+  display: block;
+  width: 4px;
+  height: 20px;
+  background:linear-gradient(180deg, #B6F829 0%, #67DD0A 100%);
+  position: absolute;
+  top:20px;
+  left:-4px;
+
+}
+
+.empresa-titulo {
+  font-size: 1.125rem;
+  line-height:1.1;
+  color:#141414;
+  font-weight: bold;
+
+}
+
+.empresa-descricao {
+  font-size: .875rem;
+  color:#525252;
+  line-height: 1.25;
+}
+
+.empresa-tecnologias {
+  font-size:.875rem ;
+  display: flex;
+  flex-wrap: wrap;
+  gap:10px;
+  align-content: start;
+  color: #141414;
+  
+}
+
+.empresa-tecnologias li {
+  background: #FFFFFF;
+  border-radius:5px;
+  padding:5px 10px;
+  
+}
+
+@media (max-width: 800px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+    gap:40px;
+
+  }
+  .experiencia .subtitulo {
+    color:#141414;
+  }
+
+  .empresa {
+   margin-bottom: 40px;
+  }
+
+  .empresa-ano{
+    left:20px;
+    top: -20px;
+    text-align:  left;
+  }
+}
+
+@media (max-width: 400px) {
+  .empresa {
+    grid-template-columns:1fr;
+  }
+  .experiencia-texto {
+    font-size: .975rem ;
+  }
+
+}
